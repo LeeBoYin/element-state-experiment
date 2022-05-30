@@ -57,10 +57,10 @@ const num = 10;
     }
 
     // focus
-    &:focus { // with cursor or pointer
+		&:focus:not(.focus-visible) { // remove outline for non-keyboard :focus
       outline: none;
     }
-    &:focus-visible { // with tab
+    &:focus-visible { // focus with keyboard tab
       outline: 3px dashed red;
       outline-offset: 3px;
     }

@@ -57,7 +57,7 @@ const num = 10;
     }
 
     // focus
-		&:focus:not(.focus-visible) { // remove outline for non-keyboard :focus
+		&:focus:not(:focus-visible) { // remove outline for non-keyboard :focus
       outline: none;
     }
     &:focus-visible { // focus with keyboard tab
